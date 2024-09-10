@@ -14,3 +14,27 @@ body {
 .task-card:hover {
   cursor: grab;
 }
+
+/* apply full background color based on the deadline status */
+.task-card[data-color="red"] {
+  background-color: red; 
+}
+
+.task-card[data-color="yellow"] {
+  background-color: yellow; 
+  color: black; 
+}
+
+.task-card[data-color="green"] {
+  background-color: green; 
+}
+
+
+.ui-draggable-dragging {
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+.lane-hover {
+  border: 2px dashed #007bff;
+}
