@@ -61,3 +61,5 @@ Task Board is a web-based application that offers a clean and intuitive interfac
 ## Summary
 
 Task Manager Board is a dynamic browser-based application for project teams to organize and track tasks. Built with HTML, CSS, JavaScript, and jQuery, it features task creation, progress tracking, drag-and-drop management, and data persistence using Day.js and localStorage
+
+https://brockaltug.github.io/task-manager-board/
