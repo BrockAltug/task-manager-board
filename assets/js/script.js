@@ -47,7 +47,7 @@ function handleAddTask(event) {
         title,
         description,
         deadline,
-        status: 'todo', // Initial status is 'todo'
+        status: 'todo', // Initial status set to 'todo'
         color: dayjs(deadline).isBefore(dayjs()) ? 'red' : dayjs(deadline).diff(dayjs(), 'day') <= 2 ? 'yellow' : 'green'
     };
 
@@ -102,23 +102,23 @@ function makeLanesDroppable() {
     $(".lane").droppable({
         accept: ".task-card",
         drop: handleDrop,
-        tolerance: "pointer", // better for handling drops accurately
-        hoverClass: "lane-hover" // class for visual feedback on hover
+        tolerance: "pointer", // ensures the task is accurately dropped
+        hoverClass: "lane-hover" // visual feedback on hover
     });
 }
 
 // Helper function to make task cards draggable
 function makeCardsDraggable() {
     $(".task-card").draggable({
-        revert: "invalid", // revert to the original position if not dropped on a valid target
+        revert: "invalid", // revert if not dropped on a valid target
         zIndex: 1000, // ensure the dragged item is always on top
         containment: ".container", // constrain the drag within the container
-        cursorAt: { top: 10, left: 10 }, // control where the cursor is in relation to the dragged item
+        cursorAt: { top: 10, left: 10 }, // cursor positioning relative to the dragged item
         start: function () {
             $(this).css("cursor", "grabbing");
         },
         stop: function () {
-            $(this).css("cursor", "grab");
+            $(this).css({ top: 0, left: 0, cursor: "grab" }); // reset position and cursor
         }
     });
 }
