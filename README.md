@@ -2,7 +2,7 @@
 
 ## Task Board
 
-A dynamic and interactive Kanban-style 📋 task management application designed to help users efficiently organize and prioritize their tasks. This app allows users to create tasks, set deadlines, and move tasks between different stages of progress. Tasks are stored locally to ensure that data is preserved across sessions.
+A dynamic and interactive Kanban-style task management application designed to help users efficiently organize and prioritize their tasks. This app allows users to create tasks, set deadlines, and move tasks between different stages of progress. Tasks are stored locally to ensure that data is preserved across sessions.
 
 ## Table of Contents
 
